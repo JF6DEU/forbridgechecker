@@ -1,0 +1,8 @@
+services:
+ - name: bridge-check
+   plan: free
+   type: web
+   runtime: node
+   branch: main
+   buildCommand: npm install http revolt.js
+   startCommand: node ./index.js
